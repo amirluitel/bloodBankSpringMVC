@@ -55,6 +55,7 @@ public class registerController {
 			}
 			
 			else {
+				model.addAttribute("msqlError", regDao.sqlError);
 				return "register";
 			}
 			

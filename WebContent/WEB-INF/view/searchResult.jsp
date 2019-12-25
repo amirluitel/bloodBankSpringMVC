@@ -22,6 +22,9 @@
 			</h2></a>
 	<div class="inner">
 		<div class="features">
+		<p>Result for<br>
+		Blood Group= ${bloodGroup} <br>
+		Address= ${address} </p>
 	<table style="width: 100%;">
 		<tr>
 			<th style="text-align: center;">Firstname</th>

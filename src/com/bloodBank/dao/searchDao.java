@@ -34,7 +34,7 @@ public class searchDao {
 			
 			Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, username, mypassword);
-            String query ="SELECT * FROM tbl_registration WHERE bloodGroup = '"+bloodGroup+"' AND address='"+address+"'";
+            String query ="SELECT * FROM tbl_registration WHERE bloodGroup = '"+bloodGroup+"' OR address='"+address+"'";
             Statement st = connection.createStatement();
             ResultSet rs=st.executeQuery(query);
             while ( rs.next() ) {

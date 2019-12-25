@@ -18,6 +18,7 @@
 						<h2 style="margin-bottom: 0px">Register</h2>
 					</header>
 					<div class="features">
+					<p>${msqlError}</p>
 					<p><strong>${AllFieldRequired}</strong></p>
 						<form class="grid-form" method="post" action="registration">
 						
@@ -28,7 +29,7 @@
 							<label for="email">Email*</label>
 							<input name="email" type="text"> 
 							<label for="password">Password*</label>
-							<input name="password"  type="password">
+							<input name="password" autocomplete="new-password" type="password">
 							<label for="address">Address (zipcode)*</label>
 							<input name="address" type="text"> 
 							<label for="phone">Phone*</label>

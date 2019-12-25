@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class registrationDao {
 	
-	
+	public String sqlError;
 	public int addDetailsToDatabse(String fname, String lname,String email,String password,String address,String phone,String bloodGroup,String donate) {
 		
 		//Database Connection
@@ -27,8 +27,7 @@ public class registrationDao {
             	}
             	    
 		catch(Exception err){
-			
-			System.out.println(err);
+			sqlError=err.getMessage();
 			
 		}
 	return i;

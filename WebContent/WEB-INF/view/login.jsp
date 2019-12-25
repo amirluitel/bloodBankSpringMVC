@@ -29,7 +29,7 @@
 						</div>
 						<div class="form-control narrow">
 							<label for="password">Password</label>
-							<input name="password"  type="password">
+							<input name="password" autocomplete="new-password" type="password">
 						</div>
 						
 						<ul class="actions">

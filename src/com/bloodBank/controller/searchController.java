@@ -45,6 +45,8 @@ public class searchController {
 		
 		//add list to jsp page
 		model.addAttribute("allList",list);
+		model.addAttribute("bloodGroup",bloodGroup);
+		model.addAttribute("address",address);
 		
 		//go to searchResult.jsp page
 		return "searchResult";
